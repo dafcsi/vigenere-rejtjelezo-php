@@ -13,3 +13,4 @@ A titkosításhoz szükséges egy titkos kulcs, melynek segítségével fejthetj
 Mivel ez egy továbbfejlesztett verzió, így támogatja a számok használatát, viszont a szóköz és ékezetes betűk illetve az írásjelek továbbra sem támogatottak.
 <h2></h2>
 <b>Ez a project egy iskolai feladat része.</b>
+Hivatalos működő verzió: https://benstudio.hu/generators/vigenere
