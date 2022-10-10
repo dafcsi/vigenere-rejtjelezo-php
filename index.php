@@ -2,14 +2,14 @@
 <?php
 function betu_titkosit($elsobetu,$masodikbetu){
     //megadjuk a szótárat, ezt fogja a program felhasználni a diagramm elkészítéséhez.
-    $eredeti = array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9");
+    $eredeti = array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9",".",",","?",";","!",":","'",'"',"(",")","[","]","+","-","/","\ ","%","=","*","_","{","}","@","&","#","$","<",">"," ");
     
     $betuk = $eredeti;
     $sorszam = 0;
     $main_array =array();
     array_push($main_array,$betuk);  
     //a while függvény a szótár hosszáig működik.
-     while($sorszam != 35){ 
+     while($sorszam != count($eredeti)){ 
         //a program az első betűt hozzáadja a tömbhöz, majd kitörli az első betűt, így megkapjuk a 2. sor-t például
         array_push($betuk,$betuk[0]);
         array_shift($betuk);
@@ -40,14 +40,14 @@ function titkosit($szoveg,$kulcs){
 }
 function megfejt_betu($betu1,$betu2){
     // itt is megadjuk az alap szótárat, ami fontos hogy ugyan azokat az elemeket tartalmazza mint a titkosítás függvény.
-    $eredeti = array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9");
+    $eredeti = array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9",".",",","?",";","!",":","'",'"',"(",")","[","]","+","-","/","\ ","%","=","*","_","{","}","@","&","#","$","<",">"," ");
     $betuk = $eredeti;
     $sorszam = 0;
     $main_array =array();
     $megfejtett_betu = "";
     array_push($main_array,$betuk);  
     // a titkosításhoz hasonlóan itt is létrehozzuk a fő tömböt.
-     while($sorszam != 35){ 
+     while($sorszam != count($eredeti)){ 
         array_push($betuk,$betuk[0]);
         array_shift($betuk);
         array_push($main_array,$betuk);
