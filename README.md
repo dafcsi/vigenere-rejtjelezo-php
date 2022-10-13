@@ -16,7 +16,7 @@ megfejt("Megfejteni kívánt szöveg","Titkos kulcs");
 * Jelenleg csak az angol ABC betűivel és számokkal működik.
 * A szóköz eltávolításra kerül a titkosítás közben.
 * Kis és nagybetű között nem tesz különbséget, mindenképpen nagybetűs eredmény érkezik vissza.
-* Semilyen írásjel nem használható, alkalmazása hibát okozhat.
+* ~~Semilyen írásjel nem használható, alkalmazása hibát okozhat.~~
 
 Publikált változat:
 <a href="https://benstudio.hu/generators/vigenere">Link</a>
