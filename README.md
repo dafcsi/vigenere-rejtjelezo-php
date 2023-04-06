@@ -18,5 +18,3 @@ megfejt("Megfejteni kívánt szöveg","Titkos kulcs");
 * Kis és nagybetű között nem tesz különbséget, mindenképpen nagybetűs eredmény érkezik vissza.
 * ~~Semilyen írásjel nem használható, alkalmazása hibát okozhat.~~
 
-Publikált változat:
-<a href="https://benstudio.hu/generators/vigenere">Link</a>
